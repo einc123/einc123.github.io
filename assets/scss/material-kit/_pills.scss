@@ -29,7 +29,7 @@
 
             &.active{
                 color: $white-color;
-                background-color: $primary;
+                background-color: #006b7e;
                 @include shadow-big-color($primary);
             }
         }
