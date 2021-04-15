@@ -76,7 +76,7 @@
                 &,
                 &:focus,
                 &:hover{
-                    background-color: $success;
+                    background-color: #006b7e;
                     @include shadow-big-color($success);
                     color: $white-color;
                 }
