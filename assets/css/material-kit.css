@@ -4141,7 +4141,7 @@ tbody.collapse.show {
 }
 
 .custom-radio .custom-control-input:disabled:checked~.custom-control-label::before {
-  background-color: rgba(156, 39, 176, 0.5);
+  background-color: #006b7e;
 }
 
 .custom-select {
@@ -4219,7 +4219,7 @@ tbody.collapse.show {
 
 .custom-file-input:focus~.custom-file-control {
   border-color: #d176e1;
-  box-shadow: 0 0 0 0.2rem rgba(156, 39, 176, 0.25);
+  box-shadow: 0 0 0 0.2rem #006b7e;
 }
 
 .custom-file-input:focus~.custom-file-control::before {
