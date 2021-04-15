@@ -1,4 +1,10 @@
 # Euan's Portfolio Website 
-© Euan - All Rights Reserved, You may fork this code but you can't
-reproduce a complete copy of this exact site for your own website.<br>
-<b>YOU MUST MAKE MAJOR CHANGES TO THE CODE BEFORE USING IT</b>
+© Euan - Edits to this code are shown in the commits.
+<hr>
+ Original code by Creative Tim - Material Kit - v2.0.7
+<hr>
+ <ul>
+   <li>Product Page: https://www.creative-tim.com/product/material-kit</li>
+   <li>Copyright 2020 Creative Tim (http://www.creative-tim.com)</li>
+ </ul>
+<hr>
