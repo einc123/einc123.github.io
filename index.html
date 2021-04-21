@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/23b6d6dfa6.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
   <!-- CSS Files -->
   <link rel="stylesheet" href="/assets/bootstrap.min.css">
   <style>
@@ -53,97 +55,207 @@
   </div>
   <div style="padding-left: 80px; padding-right: 80px; padding-bottom: 80px;">
     <center>
-      <div style="margin-bottom: 25px; ">
-        <button type="button" class="btn btn-primary disabled rounded-lg" style="margin-right: 20px;">Nameless Installations</button>
-        <button type="button" class="btn btn-primary disabled rounded-lg" style="margin-right: 20px;">Wordpress Installations</button>
-        <button type="button" class="btn btn-primary disabled rounded-lg">Website Development</button>
-      </div>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">All Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#wordpress">Wordpress Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nameless">NamelessMC Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#websites">Website Development</a>
+        </li>
+      </ul>
     </center>
-    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 50px;">
-      <div class="col">
-        <div class="card h-100 rounded-lg">
-          <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://sapphireadventures.net" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sapphire Adventures</h5>
-            <p class="card-text">This project was developed by <b>ChezzerYT</b> but i sometimes helped with certain things and other bug fixes.</p>
-            <center><button type="button" onclick="window.location.href='https://sapphireadventures.net/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade show active" id="home">
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 50px;">
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://sapphireadventures.net" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sapphire Adventures</h5>
+                <p class="card-text">This project was developed by <b>ChezzerYT</b> but i sometimes helped with certain things and other bug fixes.</p>
+                <center><button type="button" onclick="window.location.href='https://sapphireadventures.net/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">I Helped</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Developer: ChezzerYT</span>
+              </div>
+            </div>
           </div>
-          <div class="card-footer">
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">I Helped</span>
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Developer: ChezzerYT</span>
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://coastersandcrafters.com" class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Coasters & Crafters</h5>
+                <p class="card-text">Me & <b>ChezzerYT</b> are working on this together with <b>ItzPolar</b> creating the next generation of Minecraft Server List website.</p>
+                <center><button type="button" onclick="window.location.href='https://coastersandcrafters.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Servers</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Community</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://fifecyclespeedway.com" class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fife Cycle Speedway</h5>
+                <p class="card-text">This is a charity i helped create a website for, we started with the <b>BootstrapMade</b> template called bethany and then adapted it for PHP and I added multi page support.</p>
+                <center><button type="button" onclick="window.location.href='https://fifecyclespeedway.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Charity</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Cycling</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">BootstrapMade</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 50px;">
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://kw6craft.us/" class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">KW6Craft</h5>
+                <p class="card-text">I installed NamelessMC for the KW6Craft Minecraft Server, I installed a well known theme and they liked the final result.</p>
+                <center><button type="button" onclick="window.location.href='https://kw6craft.us'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <div class="card-body">
+                <h5 class="card-title">Franks Laboratory</h5>
+                <p class="card-text">I will be developing a website using wordpress for a minecraft server called franks laboratory later this year.</p>
+                <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Wordpress</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <div class="card-body">
+                <h5 class="card-title">Dream Kingdom</h5>
+                <p class="card-text">I have been asked to create a Nameless website for a server called Dream Kingdom later this year.</p>
+                <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100 rounded-lg">
-          <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://coastersandcrafters.com" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Coasters & Crafters</h5>
-            <p class="card-text">Me & <b>ChezzerYT</b> are working on this together with <b>ItzPolar</b> creating the next generation of Minecraft Server List website.</p>
-            <center><button type="button" onclick="window.location.href='https://coastersandcrafters.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
-          </div>
-          <div class="card-footer">
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Servers</span>
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Community</span>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 rounded-lg">
-          <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://fifecyclespeedway.com" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Fife Cycle Speedway</h5>
-            <p class="card-text">This is a charity i helped create a website for, we started with the <b>BootstrapMade</b> template called bethany and then adapted it for PHP and I added multi page support.</p>
-            <center><button type="button" onclick="window.location.href='https://fifecyclespeedway.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
-          </div>
-          <div class="card-footer">
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Charity</span>
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Cycling</span>
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">BootstrapMade</span>
+      <div class="tab-pane fade" id="wordpress">
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 50px;">
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <div class="card-body">
+                <h5 class="card-title">Franks Laboratory</h5>
+                <p class="card-text">I will be developing a website using wordpress for a minecraft server called franks laboratory later this year.</p>
+                <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Wordpress</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 50px;">
-      <div class="col">
-        <div class="card h-100 rounded-lg">
-          <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://kw6craft.us/" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">KW6Craft</h5>
-            <p class="card-text">I installed NamelessMC for the KW6Craft Minecraft Server, I installed a well known theme and they liked the final result.</p>
-            <center><button type="button" onclick="window.location.href='https://kw6craft.us'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+      <div class="tab-pane fade" id="nameless">
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 50px;">
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <div class="card-body">
+                <h5 class="card-title">Dream Kingdom</h5>
+                <p class="card-text">I have been asked to create a Nameless website for a server called Dream Kingdom later this year.</p>
+                <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+              </div>
+            </div>
           </div>
-          <div class="card-footer">
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://kw6craft.us/" class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">KW6Craft</h5>
+                <p class="card-text">I installed NamelessMC for the KW6Craft Minecraft Server, I installed a well known theme and they liked the final result.</p>
+                <center><button type="button" onclick="window.location.href='https://kw6craft.us'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100 rounded-lg">
-          <div class="card-body">
-            <h5 class="card-title">Franks Laboratory</h5>
-            <p class="card-text">I will be developing a website using wordpress for a minecraft server called franks laboratory later this year.</p>
-            <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
+      <div class="tab-pane fade" id="websites">
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 50px;">
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://sapphireadventures.net" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sapphire Adventures</h5>
+                <p class="card-text">This project was developed by <b>ChezzerYT</b> but i sometimes helped with certain things and other bug fixes.</p>
+                <center><button type="button" onclick="window.location.href='https://sapphireadventures.net/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">I Helped</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Developer: ChezzerYT</span>
+              </div>
+            </div>
           </div>
-          <div class="card-footer">
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Wordpress</span>
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://coastersandcrafters.com" class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Coasters & Crafters</h5>
+                <p class="card-text">Me & <b>ChezzerYT</b> are working on this together with <b>ItzPolar</b> creating the next generation of Minecraft Server List website.</p>
+                <center><button type="button" onclick="window.location.href='https://coastersandcrafters.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Servers</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Community</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 rounded-lg">
-          <div class="card-body">
-            <h5 class="card-title">Dream Kingdom</h5>
-            <p class="card-text">I have been asked to create a Nameless website for a server called Dream Kingdom later this year.</p>
-            <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
-          </div>
-          <div class="card-footer">
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
-            <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+          <div class="col">
+            <div class="card h-100 rounded-lg">
+              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://fifecyclespeedway.com" class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fife Cycle Speedway</h5>
+                <p class="card-text">This is a charity i helped create a website for, we started with the <b>BootstrapMade</b> template called bethany and then adapted it for PHP and I added multi page support.</p>
+                <center><button type="button" onclick="window.location.href='https://fifecyclespeedway.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Charity</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Cycling</span>
+                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">BootstrapMade</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
