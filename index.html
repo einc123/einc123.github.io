@@ -54,6 +54,47 @@
     body::-webkit-scrollbar-thumb {
       background-color: #3D3D3D;
     }
+    .icon-scroll,
+    .icon-scroll:before {
+        position: absolute;
+        left: 50%
+    }
+    .icon-scroll {
+        width: 30px;
+        height: 50px;
+        margin-left: -20px;
+        bottom: 10px;
+        margin-top: -35px;
+        border: 2px solid #fff;
+        border-radius: 25px
+    }
+    @media (max-width: 767px) {
+        .icon-scroll {
+            position: relative
+        }
+    }
+    .icon-scroll:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        margin-left: -4px;
+        top: 8px;
+        border-radius: 4px;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-name: scroll
+    }
+    @keyframes scroll {
+        0% {
+            opacity: 1
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(26px)
+        }
+    }
+
 </style>
 <script>
   // Scroll to specific values
@@ -93,6 +134,7 @@ document.querySelector('.hello').scrollIntoView({
               <center> <img src="/assets/app_development_PNG.png" alt="" width="400" height="400px" class="animate__animated animate__backInRight"> </center>
             </div>
           </div>
+          <div class="icon-scroll" style="margin-top: 25px;"></div>
       </div>
       <div style="padding-left: 80px; padding-right: 80px; padding-bottom: 80px;">
         <center>
