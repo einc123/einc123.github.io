@@ -43,171 +43,228 @@
       background-color: transparent;
       text-decoration: underline;
     }
-    </style>
-</head>
 
-<body style="background: #F5F6F7;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#" >Euan Livingstone <span class="badge badge-pill badge-light">Portfolio</span></a>
-  </nav>
-  <div class="jumbotron" style="background: rgb(6,101,213); background: linear-gradient(135deg, rgba(6,101,213,1) 0%, rgba(0,53,102,1) 100%);">
-      <div class="row" style="padding-left: 5%; padding-right: 5%">
-        <div class="col">
-          <h1 class="display-3 animate__animated animate__heartBeat" style="color: white; font-family: 'Quicksand', sans-serif;">Hello,</h1>
-          <p class="lead animate__animated animate__headShake" style="color: white; font-family: 'Quicksand', sans-serif;">I'm Euan A Web Developer &amp; Graphic Designer. — I have been learning to develop for many years and have had many people help me with these skills along the way. — I have also been Graphic Designing for many years and i'm working on my Graphic Communications Qualifications as well as Computing Science Qualifications at the moment.</p>
-          <hr class="my-4" style="height: 1px; background-color: white; border: none;">
-          <p class="animate__animated animate__headShake" style="color: white; font-family: 'Quicksand', sans-serif;">Please read more about my projects below and if you would like to contact me my email is <a href="mailto:euanliv@gmail.com">euanliv@gmail.com</a></p>
-        </div>
-        <div class="col">
-          <center> <img src="/assets/app_development_PNG.png" alt="" width="400" height="400px" class="animate__animated animate__backInRight"> </center>
+    .scrollbar
+  {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+  }
+
+  .force-overflow
+  {
+    min-height: 450px;
+  }
+
+  #wrapper
+  {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+  }
+
+  /*
+  *  STYLE 1
+  */
+
+  #style-1::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+
+  #style-1::-webkit-scrollbar
+  {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+
+  #style-1::-webkit-scrollbar-thumb
+  {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+  }
+</style>
+<script>
+  $(document).ready(function () {
+          if (!$.browser.webkit) {
+              $('.wrapper').html('<p>Sorry! My site requires webkit: (</p>');
+          }
+      });
+</script>
+</head>
+<div class="scrollbar" id="style-1">
+  <div class="force-overflow">
+    <body style="background: #F5F6F7;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#" >Euan Livingstone <span class="badge badge-pill badge-light">Portfolio</span></a>
+      </nav>
+      <div class="jumbotron" style="background: rgb(6,101,213); background: linear-gradient(135deg, rgba(6,101,213,1) 0%, rgba(0,53,102,1) 100%);">
+          <div class="row" style="padding-left: 5%; padding-right: 5%">
+            <div class="col">
+              <h1 class="display-3 animate__animated animate__heartBeat" style="color: white; font-family: 'Quicksand', sans-serif;">Hello,</h1>
+              <p class="lead animate__animated animate__headShake" style="color: white; font-family: 'Quicksand', sans-serif;">I'm Euan A Web Developer &amp; Graphic Designer. — I have been learning to develop for many years and have had many people help me with these skills along the way. — I have also been Graphic Designing for many years and i'm working on my Graphic Communications Qualifications as well as Computing Science Qualifications at the moment.</p>
+              <hr class="my-4" style="height: 1px; background-color: white; border: none;">
+              <p class="animate__animated animate__headShake" style="color: white; font-family: 'Quicksand', sans-serif;">Please read more about my projects below and if you would like to contact me my email is <a href="mailto:euanliv@gmail.com">euanliv@gmail.com</a></p>
+            </div>
+            <div class="col">
+              <center> <img src="/assets/app_development_PNG.png" alt="" width="400" height="400px" class="animate__animated animate__backInRight"> </center>
+            </div>
+          </div>
+      </div>
+      <div style="padding-left: 80px; padding-right: 80px; padding-bottom: 80px;">
+        <center>
+          <h4><span class="badge badge-pill badge-dark">Web Design & Development</span></h4>
+        </center>
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 20px; ">
+              <div class="col" style="margin-bottom: 50px; ">
+                <div class="card h-100 rounded-lg">
+                  <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://sapphireadventures.net" class="card-img-top rounded" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sapphire Adventures</h5>
+                    <p class="card-text">This project was developed by <b>ChezzerYT</b> but i sometimes helped with certain things and other bug fixes.</p>
+                    <center><button type="button" onclick="window.location.href='https://sapphireadventures.net/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">I Helped</span>
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Developer: ChezzerYT</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="margin-bottom: 50px; ">
+                <div class="card h-100 rounded-lg">
+                  <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://coastersandcrafters.com" class="card-img-top rounded" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Coasters & Crafters</h5>
+                    <p class="card-text">Me & <b>ChezzerYT</b> are working on this together with <b>ItzPolar</b> creating the next generation of Minecraft Server List website.</p>
+                    <center><button type="button" onclick="window.location.href='https://coastersandcrafters.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Servers</span>
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Community</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="margin-bottom: 50px; ">
+                <div class="card h-100 rounded-lg">
+                  <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://fifecyclespeedway.com" class="card-img-top rounded" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Fife Cycle Speedway</h5>
+                    <p class="card-text">This is a charity i helped create a website for, we started with the <b>BootstrapMade</b> template called bethany and then adapted it for PHP and I added multi page support.</p>
+                    <center><button type="button" onclick="window.location.href='https://fifecyclespeedway.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Charity</span>
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Cycling</span>
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">BootstrapMade</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col" style="margin-bottom: 50px; ">
+                <div class="card h-100 rounded-lg">
+                  <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://kw6craft.us/" class="card-img-top rounded" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">KW6Craft <span class="badge badge-pill badge-dark">New!</span></h5>
+                    <p class="card-text">I installed NamelessMC for the KW6Craft Minecraft Server, I installed a well known theme and they liked the final result.</p>
+                    <center><button type="button" onclick="window.location.href='https://kw6craft.us'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="margin-bottom: 50px; ">
+                <div class="card h-100 rounded-lg">
+                  <div class="card-body">
+                    <h5 class="card-title">Franks Laboratory</h5>
+                    <p class="card-text">I will be developing a website using wordpress for a minecraft server called franks laboratory later this year.</p>
+                    <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Wordpress</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="margin-bottom: 50px; ">
+                <div class="card h-100 rounded-lg">
+                  <div class="card-body">
+                    <h5 class="card-title">Dream Kingdom</h5>
+                    <p class="card-text">I have been asked to create a Nameless website for a server called Dream Kingdom later this year.</p>
+                    <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
+                    <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-  </div>
-  <div style="padding-left: 80px; padding-right: 80px; padding-bottom: 80px;">
-    <center>
-      <h4><span class="badge badge-pill badge-dark">Web Design & Development</span></h4>
-    </center>
-        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 20px; ">
-          <div class="col" style="margin-bottom: 50px; ">
-            <div class="card h-100 rounded-lg">
-              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://sapphireadventures.net" class="card-img-top rounded" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Sapphire Adventures</h5>
-                <p class="card-text">This project was developed by <b>ChezzerYT</b> but i sometimes helped with certain things and other bug fixes.</p>
-                <center><button type="button" onclick="window.location.href='https://sapphireadventures.net/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
-              </div>
-              <div class="card-footer">
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">I Helped</span>
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Developer: ChezzerYT</span>
-              </div>
-            </div>
-          </div>
-          <div class="col" style="margin-bottom: 50px; ">
-            <div class="card h-100 rounded-lg">
-              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://coastersandcrafters.com" class="card-img-top rounded" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Coasters & Crafters</h5>
-                <p class="card-text">Me & <b>ChezzerYT</b> are working on this together with <b>ItzPolar</b> creating the next generation of Minecraft Server List website.</p>
-                <center><button type="button" onclick="window.location.href='https://coastersandcrafters.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
-              </div>
-              <div class="card-footer">
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Servers</span>
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Community</span>
-              </div>
-            </div>
-          </div>
-          <div class="col" style="margin-bottom: 50px; ">
-            <div class="card h-100 rounded-lg">
-              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://fifecyclespeedway.com" class="card-img-top rounded" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Fife Cycle Speedway</h5>
-                <p class="card-text">This is a charity i helped create a website for, we started with the <b>BootstrapMade</b> template called bethany and then adapted it for PHP and I added multi page support.</p>
-                <center><button type="button" onclick="window.location.href='https://fifecyclespeedway.com/'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
-              </div>
-              <div class="card-footer">
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Charity</span>
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Cycling</span>
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">BootstrapMade</span>
-              </div>
-            </div>
-          </div>
+      <div class="jumbotron" style="background: #2C2C2C;">
+        <h1 class="display-3" style="color: white;">Statistics!</h1>
+        <p class="lead" style="color: white; font-family: 'Ubuntu', sans-serif;">Here is statistics on my coding knowledge &#x2014; I have been learning to develop for many years and have had many people help me with these skills along the way.</p>
+        <hr class="my-4" style="height: 1px; background-color: #ccc; border: none;" >
+        <h5 style="color: white;">HTML <span class="badge badge-pill badge-light">75%</span></h5>
+        <p style="color: white;">I have been using css for the past three years and I can develop quite well using it.</p>
+        <div class="progress" style="margin-bottom: 30px;">
+          <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col" style="margin-bottom: 50px; ">
-            <div class="card h-100 rounded-lg">
-              <img src="https://api.apiflash.com/v1/urltoimage?access_key=68183e7d1fa44330823ae9112fc254df&url=https://kw6craft.us/" class="card-img-top rounded" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">KW6Craft <span class="badge badge-pill badge-dark">New!</span></h5>
-                <p class="card-text">I installed NamelessMC for the KW6Craft Minecraft Server, I installed a well known theme and they liked the final result.</p>
-                <center><button type="button" onclick="window.location.href='https://kw6craft.us'" class="btn btn-light btn-sm rounded-lg">Visit Website</button></center>
-              </div>
-              <div class="card-footer">
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
-              </div>
-            </div>
-          </div>
-          <div class="col" style="margin-bottom: 50px; ">
-            <div class="card h-100 rounded-lg">
-              <div class="card-body">
-                <h5 class="card-title">Franks Laboratory</h5>
-                <p class="card-text">I will be developing a website using wordpress for a minecraft server called franks laboratory later this year.</p>
-                <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
-              </div>
-              <div class="card-footer">
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Wordpress</span>
-              </div>
-            </div>
-          </div>
-          <div class="col" style="margin-bottom: 50px; ">
-            <div class="card h-100 rounded-lg">
-              <div class="card-body">
-                <h5 class="card-title">Dream Kingdom</h5>
-                <p class="card-text">I have been asked to create a Nameless website for a server called Dream Kingdom later this year.</p>
-                <center><button type="button" class="btn btn-light btn-sm rounded-lg">Link Coming Soon!</button></center>
-              </div>
-              <div class="card-footer">
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless MC</span>
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Nameless Theme</span>
-                <span class="badge badge-pill badge-dark" style="margin-right: 10px;">Minecraft Server</span>
-              </div>
-            </div>
-          </div>
+        <h5 style="color: white;">CSS <span class="badge badge-pill badge-light">55%</span></h5>
+        <p style="color: white;">I have been developing with css for about two years and i'm learning this as I go!</p>
+        <div class="progress" style="margin-bottom: 30px;">
+          <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 style="color: white;">PHP <span class="badge badge-pill badge-light">35%</span></h5>
+        <p style="color: white;">I have been learning php during the covid lockdown and i'm enjoying it!</p>
+        <div class="progress" style="margin-bottom: 30px;">
+          <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 style="color: white;">JAVASCRIPT <span class="badge badge-pill badge-light">15%</span></h5>
+        <p style="color: white;">I am learning javascript at the moment and i can do small things like program buttons to redirect.</p>
+        <div class="progress" style="margin-bottom: 30px;">
+          <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 style="color: white;">PYTHON <span class="badge badge-pill badge-light">45%</span></h5>
+        <p style="color: white;">I have been learning python for my exams and I now understand how to use it quite well!</p>
+        <div class="progress" style="margin-bottom: 30px;">
+          <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 style="color: white;">MYSQL <span class="badge badge-pill badge-light">60%</span></h5>
+        <p style="color: white;">I normally use phpmyadmin when using MySQL databases but I can us them with php to display different things on webpages.</p>
+        <div class="progress" style="margin-bottom: 30px;">
+          <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 style="color: white;">LINUX (DEBIAN 10) <span class="badge badge-pill badge-light">70%</span></h5>
+        <p style="color: white;">I have been using linux for the past year and I now know how to use commands and manage software within it.</p>
+        <div class="progress" style="margin-bottom: 30px;">
+          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 style="color: white;">APACHE 2 <span class="badge badge-pill badge-light">10%</span></h5>
+        <p style="color: white;">I am learning to use Apache 2 at the moment.</p>
+        <div class="progress" style="margin-bottom: 30px;">
+          <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
       </div>
-    </div>
+      <div style="padding-left: 80px; padding-right: 80px; padding-bottom: 80px;">
+        <center>
+          <h4><span class="badge badge-pill badge-dark">Graphic Design</span></h4>
+        </center>
+        <p>test</p>
+      </div>
+    </body>
   </div>
-  <div class="jumbotron" style="background: #2C2C2C;">
-    <h1 class="display-3" style="color: white;">Statistics!</h1>
-    <p class="lead" style="color: white; font-family: 'Ubuntu', sans-serif;">Here is statistics on my coding knowledge &#x2014; I have been learning to develop for many years and have had many people help me with these skills along the way.</p>
-    <hr class="my-4" style="height: 1px; background-color: #ccc; border: none;" >
-    <h5 style="color: white;">HTML <span class="badge badge-pill badge-light">75%</span></h5>
-    <p style="color: white;">I have been using css for the past three years and I can develop quite well using it.</p>
-    <div class="progress" style="margin-bottom: 30px;">
-      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <h5 style="color: white;">CSS <span class="badge badge-pill badge-light">55%</span></h5>
-    <p style="color: white;">I have been developing with css for about two years and i'm learning this as I go!</p>
-    <div class="progress" style="margin-bottom: 30px;">
-      <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <h5 style="color: white;">PHP <span class="badge badge-pill badge-light">35%</span></h5>
-    <p style="color: white;">I have been learning php during the covid lockdown and i'm enjoying it!</p>
-    <div class="progress" style="margin-bottom: 30px;">
-      <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <h5 style="color: white;">JAVASCRIPT <span class="badge badge-pill badge-light">15%</span></h5>
-    <p style="color: white;">I am learning javascript at the moment and i can do small things like program buttons to redirect.</p>
-    <div class="progress" style="margin-bottom: 30px;">
-      <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <h5 style="color: white;">PYTHON <span class="badge badge-pill badge-light">45%</span></h5>
-    <p style="color: white;">I have been learning python for my exams and I now understand how to use it quite well!</p>
-    <div class="progress" style="margin-bottom: 30px;">
-      <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <h5 style="color: white;">MYSQL <span class="badge badge-pill badge-light">60%</span></h5>
-    <p style="color: white;">I normally use phpmyadmin when using MySQL databases but I can us them with php to display different things on webpages.</p>
-    <div class="progress" style="margin-bottom: 30px;">
-      <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <h5 style="color: white;">LINUX (DEBIAN 10) <span class="badge badge-pill badge-light">70%</span></h5>
-    <p style="color: white;">I have been using linux for the past year and I now know how to use commands and manage software within it.</p>
-    <div class="progress" style="margin-bottom: 30px;">
-      <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <h5 style="color: white;">APACHE 2 <span class="badge badge-pill badge-light">10%</span></h5>
-    <p style="color: white;">I am learning to use Apache 2 at the moment.</p>
-    <div class="progress" style="margin-bottom: 30px;">
-      <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-  <div style="padding-left: 80px; padding-right: 80px; padding-bottom: 80px;">
-    <center>
-      <h4><span class="badge badge-pill badge-dark">Graphic Design</span></h4>
-    </center>
-    <p>test</p>
-  </div>
-</body>
+</div>
