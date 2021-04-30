@@ -80,9 +80,32 @@ document.querySelector('.hello').scrollIntoView({
     <body style="background: #F5F6F7;">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#" >Euan Livingstone <span class="badge badge-pill badge-light">Portfolio</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#development">Web Design & Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#design">Graphic Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stats">Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="jumbotron" style="background: rgb(6,101,213); background: linear-gradient(135deg, rgba(6,101,213,1) 0%, rgba(0,53,102,1) 100%);">
           <div class="row" style="padding-left: 5%; padding-right: 5%">
+          <a id="home"></a>
             <div class="col">
               <h1 class="display-3 aos-item" data-animation="heartBeat" style="color: white; font-family: 'Quicksand', sans-serif;">Hello,</h1>
               <p class="lead aos-item" data-animation="headShake" style="color: white; font-family: 'Quicksand', sans-serif;">I'm Euan A Web Developer &amp; Graphic Designer. — I have been learning to develop for many years and have had many people help me with these skills along the way. — I have also been Graphic Designing for many years and i'm working on my Graphic Communications Qualifications as well as Computing Science Qualifications at the moment.</p>
@@ -97,6 +120,7 @@ document.querySelector('.hello').scrollIntoView({
       <div style="padding-left: 80px; padding-right: 80px; padding-bottom: 80px;">
         <center>
           <h4><span class="badge badge-pill badge-dark">Web Design & Development</span></h4>
+          <a id="development"></a>
         </center>
             <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 20px; ">
               <div class="col aos-item" data-animation="bounce" style="margin-bottom: 50px; ">
@@ -191,6 +215,7 @@ document.querySelector('.hello').scrollIntoView({
             </div>
           </div>
       <div class="jumbotron" style="background: rgb(213,159,6); background: linear-gradient(137deg, rgba(213,159,6,1) 0%, rgba(255,89,60,1) 100%);">
+        <a id="stats"></a>
         <h1 class="display-3" style="color: white; font-family: 'Quicksand', sans-serif;">Statistics!</h1>
         <p class="lead" style="color: white; font-family: 'Quicksand', sans-serif;">Here is statistics on my coding knowledge &#x2014; I have been learning to develop for many years and have had many people help me with these skills along the way.</p>
         <hr class="my-4" style="height: 1px; background-color: #ccc; border: none;" >
@@ -238,6 +263,7 @@ document.querySelector('.hello').scrollIntoView({
       <div style="padding-left: 80px; padding-right: 80px; padding-bottom: 80px;">
         <center>
           <h4><span class="badge badge-pill badge-dark">Graphic Design</span></h4>
+          <a id="design"></a>
         </center>
         <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 20px; ">
           <div class="col aos-item" data-animation="bounce" style="margin-bottom: 50px; ">
@@ -289,6 +315,7 @@ document.querySelector('.hello').scrollIntoView({
           </div>
         </div>
       </div>
+      <a id="contact"></a>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
